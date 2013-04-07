@@ -12,7 +12,6 @@
 - (NSString *) contents
 {
     NSArray *rankString = [PlayingCard rankStrings];
-    NSLog(@"contents: %@", [rankString[self.rank] stringByAppendingString:self.suit]);
     
     return [rankString[self.rank] stringByAppendingString:self.suit];
     
