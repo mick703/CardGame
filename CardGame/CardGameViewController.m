@@ -23,6 +23,9 @@
 @end
 
 @implementation CardGameViewController
+- (IBAction)deal:(id)sender {
+    
+}
 
 - (CardMatchingGame *) game
 {
