@@ -18,6 +18,8 @@
 @property (strong, nonatomic) CardMatchingGame *game;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *actionResultLabel;
+
 @end
 
 @implementation CardGameViewController
@@ -41,6 +43,7 @@
         cardButton.alpha = card.isUnplayable ? 0.3 : 1.0;
     }
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
+    self.actionResultLabel.text = self.game.actionResult;
 }
 
 - (IBAction)flipCard:(UIButton *)sender {
